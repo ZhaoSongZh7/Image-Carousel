@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture-frame {
+    width: 500px;
+    height: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.picture-frame img {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+}
+
+.previous-image {
+    position: absolute;
+    left: 0;
+    top: 200px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.15s;
+}
+
+.next-image {
+    position: absolute;
+    right: 0;
+    top: 200px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.15s;
+}
+
+.previous-image:hover, .next-image:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.picture {
+    padding: 50px;
+}
+
+.image {
+    box-shadow: 6px 6px 6px gray;
+    transition: transform 0.15s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+}
+
+.slide-dot-container {
+    display: flex;
+    justify-content: center;
+}
+
+.slide-dot {
+    /* position: absolute;
+    bottom: 10px; */
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 10px;
+    height: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+}
